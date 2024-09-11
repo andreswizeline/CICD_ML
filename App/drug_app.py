@@ -4,7 +4,7 @@ import skops.io as sio
 # Define the list of trusted types
 trusted_types = ['numpy.dtype']
 
-pipe = sio.load("./Model/drug_pipeline.skops", , trusted=trusted_types)
+pipe = sio.load("./Model/drug_pipeline.skops", trusted=trusted_types)
 
 
 def predict_drug(age, sex, blood_pressure, cholesterol, na_to_k_ratio):
